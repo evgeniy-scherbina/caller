@@ -19,5 +19,5 @@ func main() {
 		c.String(http.StatusOK, "Hello %s", name)
 	})
 
-	log.Fatal(router.Run())
+	log.Fatal(router.Run(":80"))
 }
